@@ -26,7 +26,7 @@ for ((i=0; i < ${#Array_operation[@]}; i++))
 do
     for ((j=0 ; j < ${#Array_operation[@]}; j++))
     do
-      if [[ ${Array_operation[$j]} -gt  ${Array_operation[$i]} ]]
+      if [[ ${Array_operation[$j]} -lt  ${Array_operation[$i]} ]]
       then
         tmp=${Array_operation[$i]}
         Array_operation[$i]=${Array_operation[$j]}
@@ -34,7 +34,7 @@ do
       fi
     done
 done
- echo "Asending order"
+ echo "Decending order"
 for n in "${Array_operation[@]}"
 do
       echo "$n"
