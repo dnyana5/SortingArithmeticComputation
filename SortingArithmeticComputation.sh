@@ -10,3 +10,5 @@ oprt2=$(( $a * $b + $c ))
 echo  "arithmatic operation2 ="$oprt2
 oprt3=$(( $C + $a / $b ))
 echo  "arithmatic operation3 ="$oprt3
+oprt4=$(( $a % $b + $b ))
+echo  "arithmatic operation4 ="$oprt4
